@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './imp.css'; // Your styles
+import './index.css'; // Your styles
 import BarChart from './Graphs/BarChart';
 import Heatmap from './Graphs/Heatmap';
 import BoxPlot from './Graphs/BoxPlot';
