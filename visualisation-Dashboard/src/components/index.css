@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif; /* Set a default font */
+  background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.graphs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  padding: 20px;
+  gap: 20px; /* Space between graph blocks */
+}
+
+.graph-block {
+  background-color: #ffffff; /* Default background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow for more depth */
+  padding: 20px;
+  width: 80%; /* Width of the graph blocks */
+  transition: transform 0.2s, box-shadow 0.2s; /* Animation for scaling effect on hover */
+  cursor: pointer; /* Cursor changes to pointer */
+}
+
+.graph-block:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow depth on hover */
+}
+
+.graph-description,
+.graph-filter,
+.graph-toggle {
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px;
+  margin-bottom: 10px; /* Space between sections */
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+}
+
+.graph-description {
+  background-color: #ffcc80; /* Vibrant orange background for description */
+  color: #3e2723; /* Dark brown for text */
+}
+
+.graph-filter {
+  background-color: #81d4fa; /* Bright light blue background for filter */
+  color: #01579b; /* Dark blue for text */
+}
+
+.graph-toggle {
+  background-color: #b39ddb; /* Light purple background for toggle */
+  color: #311b92; /* Deep purple for text */
+}
+
+.graph-toggle button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #7e57c2; /* Vibrant purple for the button */
+  color: white; /* White text on the button */
+  transition: background-color 0.3s, transform 0.2s; /* Animation for hover effect */
+  cursor: pointer; /* Pointer cursor for button */
+}
+
+.graph-toggle button:hover {
+  background-color: #5e35b1; /* Darker shade of purple on hover */
+  transform: scale(1.08); /* Slightly increase size on hover */
+}
+
+.graph-content {
+  margin-top: 10px;
+}
+
